@@ -1,0 +1,15 @@
+<ul class="jumbotron">
+<p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Here all users details
+  </p>
+      <li ng-repeat="detail in details">
+        <!-- edit a message -->
+        <div style="display: inline-flex;">
+	        <input style="padding-left: 5px;"ng-model="detail.name" ng-change="details.$save(message)" />
+	        <input style="padding-left: 5px;"ng-model="detail.email" ng-change="details.$save(message)"/>
+	        <textarea style="padding-left: 5px;" ng-model="detail.address" ng-change="details.$save(message)"></textarea>
+
+		</div>
+      </li>
+</ul>
